@@ -1,0 +1,38 @@
+@import "variables";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+
+  ul {
+    display: flex;
+    gap: 28px;
+    padding: 14px;
+
+    li a {
+      font-family: $font_family;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 165%;
+      color: $main_color;
+      text-decoration: none;
+    }
+  }
+
+  .socials ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+
+    li:nth-child(1) svg {
+      margin-right: 15px;
+    }
+
+    li:nth-child(2) svg {
+      margin-right: 7px;
+    }
+  }
+}

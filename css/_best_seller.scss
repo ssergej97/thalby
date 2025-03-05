@@ -1,0 +1,54 @@
+@import "variables";
+
+.best_seller {
+  padding-bottom: 248px;
+
+  .container {
+    h2 {
+      font-family: $font_family;
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: $main_color;
+      padding-bottom: 52px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        text-align: center;
+
+        img {
+          margin-bottom: 27px;
+        }
+
+        h3 {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 17px;
+          color: $main_color;
+          margin-bottom: 17px;
+        }
+
+        p {
+          font-family: $font_family;
+          font-weight: 400;
+          font-size: 17px;
+          color: $main_color;
+          margin-bottom: 10px;
+        }
+
+        a {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 17px;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: #000;
+        }
+      }
+    }
+  }
+}

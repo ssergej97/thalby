@@ -1,0 +1,120 @@
+@import "variables";
+
+.best_seller_next {
+  .card_1 {
+    background: rgba(204, 204, 204, 0.3);
+    padding-top: 76px;
+    padding-bottom: 51px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .card_text {
+        h3 {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 36px;
+          color: $main_color;
+          margin-bottom: 31px;
+        }
+
+        p {
+          font-family: $font_family;
+          font-weight: 400;
+          font-size: 36px;
+          color: $main_color;
+          margin-bottom: 40px;
+        }
+
+        a {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 17px;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: $main_color;
+        }
+      }
+    }
+  }
+
+  .card_2 {
+    background: rgba(204, 204, 204, 0.6);
+    padding-top: 76px;
+    padding-bottom: 51px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .card_text {
+        h3 {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 36px;
+          color: $main_color;
+          margin-bottom: 31px;
+        }
+
+        p {
+          font-family: $font_family;
+          font-weight: 400;
+          font-size: 36px;
+          color: $main_color;
+          margin-bottom: 40px;
+        }
+
+        a {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 17px;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: $main_color;
+        }
+      }
+    }
+  }
+
+  .card_3 {
+    background: rgba(204, 204, 204, 0.3);
+    padding-top: 76px;
+    padding-bottom: 51px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .card_text {
+        h3 {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 36px;
+          color: $main_color;
+          margin-bottom: 31px;
+        }
+
+        p {
+          font-family: $font_family;
+          font-weight: 400;
+          font-size: 36px;
+          color: $main_color;
+          margin-bottom: 40px;
+        }
+
+        a {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 17px;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: $main_color;
+        }
+      }
+    }
+  }
+}

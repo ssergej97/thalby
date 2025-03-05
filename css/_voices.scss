@@ -1,0 +1,65 @@
+@import "variables";
+
+.interviews {
+  padding-top: 52px;
+
+  .container {
+    h2 {
+      font-family: $font_family;
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: $main_color;
+      margin-bottom: 290px;
+    }
+  }
+
+  .voices {
+    background-color: #f0f0f0;
+    padding-bottom: 52px;
+    padding-top: 198px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      .voice_card {
+        text-align: center;
+        position: relative;
+        flex-basis: 287px;
+
+        img {
+          position: absolute;
+          top: -390px;
+          left: 0px;
+        }
+
+        h3 {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 22px;
+          letter-spacing: 0.03em;
+          color: $main_color;
+          margin-bottom: 40px;
+        }
+
+        p {
+          font-family: $font_family;
+          font-weight: 400;
+          font-size: 19px;
+          color: $main_color;
+          margin-bottom: 44px;
+        }
+
+        a {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 18px;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: $main_color;
+        }
+      }
+    }
+  }
+}

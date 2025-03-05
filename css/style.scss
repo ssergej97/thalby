@@ -1,0 +1,22 @@
+@import "reset";
+@import "header";
+@import "variables";
+@import "fonts";
+@import "promo";
+@import "about";
+@import "best_seller";
+@import "best_seller_next";
+@import "points";
+@import "voices";
+@import "subscribe";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1064px;
+  margin: 0 auto;
+}
+

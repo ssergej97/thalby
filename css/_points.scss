@@ -1,0 +1,41 @@
+@import "variables";
+
+.features {
+  padding-top: 200px;
+  padding-bottom: 110px;
+
+  .container {
+    h2 {
+      font-family: $font_family;
+      font-weight: 400;
+      font-size: 36px;
+      text-align: center;
+      color: $main_color;
+      margin-bottom: 70px;
+    }
+
+    .points {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 110px 24px;
+
+      .point {
+        flex-basis: 338px;
+        text-align: center;
+
+        svg {
+          margin-bottom: 26px;
+        }
+
+        h3 {
+          font-family: $font_family;
+          font-weight: 700;
+          font-size: 30px;
+          text-align: center;
+          color: $main_color;
+        }
+      }
+    }
+  }
+}

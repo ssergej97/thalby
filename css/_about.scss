@@ -1,0 +1,28 @@
+@import "variables";
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 88px;
+
+  .container {
+    text-align: center;
+
+    h2 {
+      font-family: $font_family;
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: $main_color;
+      margin-bottom: 26px;
+    }
+
+    p {
+      font-family: $font_family;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      color: $main_color;
+      margin-bottom: 47px;
+    }
+  }
+}

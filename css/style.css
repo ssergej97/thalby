@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px; }
+  nav ul {
+    display: flex;
+    gap: 28px;
+    padding: 14px; }
+    nav ul li a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 165%;
+      color: #000;
+      text-decoration: none; }
+  nav .socials ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0; }
+    nav .socials ul li:nth-child(1) svg {
+      margin-right: 15px; }
+    nav .socials ul li:nth-child(2) svg {
+      margin-right: 7px; }
+
+.promo {
+  background: #f0efeb;
+  padding: 9px 24px; }
+  .promo .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .promo .container .text h1 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 60px;
+      color: #000;
+      margin-bottom: 42px; }
+    .promo .container .text p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      color: #000;
+      margin-bottom: 33px; }
+    .promo .container .text a {
+      padding: 8px 23px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      color: #fff;
+      background: #000;
+      border: 1px solid #000;
+      border-radius: 100px;
+      text-decoration: none; }
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 88px; }
+  .about .container {
+    text-align: center; }
+    .about .container h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 26px; }
+    .about .container p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 47px; }
+
+.best_seller {
+  padding-bottom: 248px; }
+  .best_seller .container h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    padding-bottom: 52px; }
+  .best_seller .container .cards {
+    display: flex;
+    justify-content: space-between; }
+    .best_seller .container .cards .card {
+      text-align: center; }
+      .best_seller .container .cards .card img {
+        margin-bottom: 27px; }
+      .best_seller .container .cards .card h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        color: #000;
+        margin-bottom: 17px; }
+      .best_seller .container .cards .card p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: #000;
+        margin-bottom: 10px; }
+      .best_seller .container .cards .card a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #000; }
+
+.best_seller_next .card_1 {
+  background: rgba(204, 204, 204, 0.3);
+  padding-top: 76px;
+  padding-bottom: 51px; }
+  .best_seller_next .card_1 .container {
+    display: flex;
+    align-items: center;
+    gap: 50px; }
+    .best_seller_next .card_1 .container .card_text h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 31px; }
+    .best_seller_next .card_1 .container .card_text p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 40px; }
+    .best_seller_next .card_1 .container .card_text a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #000; }
+.best_seller_next .card_2 {
+  background: rgba(204, 204, 204, 0.6);
+  padding-top: 76px;
+  padding-bottom: 51px; }
+  .best_seller_next .card_2 .container {
+    display: flex;
+    align-items: center;
+    gap: 50px; }
+    .best_seller_next .card_2 .container .card_text h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 31px; }
+    .best_seller_next .card_2 .container .card_text p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 40px; }
+    .best_seller_next .card_2 .container .card_text a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #000; }
+.best_seller_next .card_3 {
+  background: rgba(204, 204, 204, 0.3);
+  padding-top: 76px;
+  padding-bottom: 51px; }
+  .best_seller_next .card_3 .container {
+    display: flex;
+    align-items: center;
+    gap: 50px; }
+    .best_seller_next .card_3 .container .card_text h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 31px; }
+    .best_seller_next .card_3 .container .card_text p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 40px; }
+    .best_seller_next .card_3 .container .card_text a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #000; }
+
+.features {
+  padding-top: 200px;
+  padding-bottom: 110px; }
+  .features .container h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 70px; }
+  .features .container .points {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 110px 24px; }
+    .features .container .points .point {
+      flex-basis: 338px;
+      text-align: center; }
+      .features .container .points .point svg {
+        margin-bottom: 26px; }
+      .features .container .points .point h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #000; }
+
+.interviews {
+  padding-top: 52px; }
+  .interviews .container h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 290px; }
+  .interviews .voices {
+    background-color: #f0f0f0;
+    padding-bottom: 52px;
+    padding-top: 198px; }
+    .interviews .voices .container {
+      display: flex;
+      justify-content: space-between; }
+      .interviews .voices .container .voice_card {
+        text-align: center;
+        position: relative;
+        flex-basis: 287px; }
+        .interviews .voices .container .voice_card img {
+          position: absolute;
+          top: -390px;
+          left: 0px; }
+        .interviews .voices .container .voice_card h3 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 22px;
+          letter-spacing: 0.03em;
+          color: #000;
+          margin-bottom: 40px; }
+        .interviews .voices .container .voice_card p {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 19px;
+          color: #000;
+          margin-bottom: 44px; }
+        .interviews .voices .container .voice_card a {
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: #000; }
+
+.subscribe {
+  padding-top: 79px;
+  padding-bottom: 88px; }
+  .subscribe .container {
+    text-align: center; }
+    .subscribe .container h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 9px; }
+    .subscribe .container p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 26px; }
+    .subscribe .container form {
+      max-width: 366px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto; }
+      .subscribe .container form input:nth-of-type(1) {
+        border: 1px solid #000;
+        width: 153px;
+        height: 39px;
+        display: inline-block;
+        margin-bottom: 18px;
+        padding-left: 8px; }
+      .subscribe .container form input:nth-of-type(2) {
+        border: 1px solid #000;
+        width: 153px;
+        height: 39px;
+        padding-left: 8px; }
+      .subscribe .container form input:nth-of-type(3) {
+        border: 1px solid #000;
+        width: 366px;
+        height: 39px;
+        margin-bottom: 16px;
+        padding-left: 8px; }
+      .subscribe .container form button {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        padding: 9px 24px;
+        background-color: #000;
+        border-radius: 100px;
+        margin: auto;
+        cursor: pointer; }
+
+footer {
+  background-color: #020202;
+  padding-top: 51px;
+  padding-bottom: 16px; }
+  footer .container .footer_info {
+    display: flex;
+    justify-content: space-between; }
+    footer .container .footer_info .footer_socials .footer_logo {
+      margin-bottom: 37px; }
+    footer .container .footer_info .footer_socials ul {
+      display: flex;
+      gap: 20px; }
+    footer .container .footer_info .footer_nav {
+      display: flex;
+      gap: 72px; }
+      footer .container .footer_info .footer_nav .footer_text {
+        margin-bottom: 20px; }
+        footer .container .footer_info .footer_nav .footer_text h3 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 165%;
+          color: #fff;
+          margin-bottom: 36px; }
+        footer .container .footer_info .footer_nav .footer_text ul li {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #fff;
+          margin-bottom: 12px; }
+          footer .container .footer_info .footer_nav .footer_text ul li:last-child {
+            margin-bottom: 0; }
+  footer .container p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 165%;
+    text-align: center;
+    color: #fff; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1064px;
+  margin: 0 auto; }

@@ -1,0 +1,42 @@
+@import "variables";
+
+.promo {
+  background: #f0efeb;
+  padding: 9px 24px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      h1 {
+        font-family: $font_family;
+        font-weight: 700;
+        font-size: 60px;
+        color: #000;
+        margin-bottom: 42px;
+      }
+
+      p {
+        font-family: $font_family;
+        font-weight: 400;
+        font-size: 24px;
+        color: $main_color;
+        margin-bottom: 33px;
+      }
+
+      a {
+        padding: 8px 23px;
+        font-family: $font_family;
+        font-weight: 400;
+        font-size: 17px;
+        color: #fff;
+        background: $main_color;
+        border: 1px solid #000;
+        border-radius: 100px;
+        text-decoration: none;
+      }
+    }
+  }
+}
