@@ -1,8 +1,13 @@
 @import "variables";
+@import "mixins";
 
 .features {
   padding-top: 200px;
   padding-bottom: 110px;
+
+  @include max-screen(360px) {
+    padding-top: 72px;
+  }
 
   .container {
     h2 {
@@ -20,9 +25,17 @@
       flex-wrap: wrap;
       gap: 110px 24px;
 
+      @include max-screen(360px) {
+        display: block;
+      }
+
       .point {
         flex-basis: 338px;
         text-align: center;
+
+        @include max-screen(360px) {
+          margin-bottom: 48px;
+        }
 
         svg {
           margin-bottom: 26px;

@@ -1,7 +1,12 @@
 @import "variables";
+@import "mixins";
 
 .best_seller {
   padding-bottom: 248px;
+
+  @include max-screen(360px) {
+    padding-bottom: 0;
+  }
 
   .container {
     h2 {
@@ -17,6 +22,9 @@
       display: flex;
       justify-content: space-between;
 
+      @include max-screen(360px) {
+        display: block;
+      }
       .card {
         text-align: center;
 
@@ -47,6 +55,16 @@
           text-decoration: underline;
           text-decoration-skip-ink: none;
           color: #000;
+          transition: 0.4s;
+          display: inline-block;
+
+          @include max-screen(360px) {
+            margin-bottom: 40px;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }

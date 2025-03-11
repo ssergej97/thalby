@@ -1,16 +1,29 @@
 @import "variables";
+@import "mixins";
 
 footer {
   background-color: #020202;
   padding-top: 51px;
   padding-bottom: 16px;
 
+  @include max-screen(360px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .container {
     .footer_info {
       display: flex;
       justify-content: space-between;
 
+      @include max-screen(360px) {
+        display: block;
+      }
+
       .footer_socials {
+        @include max-screen(360px) {
+          margin-bottom: 60px;
+        }
         .footer_logo {
           margin-bottom: 37px;
         }
@@ -18,12 +31,23 @@ footer {
         ul {
           display: flex;
           gap: 20px;
+
+          li a svg {
+            transition: 0.4s;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
         }
       }
 
       .footer_nav {
         display: flex;
         gap: 72px;
+
+        @include max-screen(360px) {
+          display: block;
+        }
 
         .footer_text {
           margin-bottom: 20px;
@@ -39,20 +63,36 @@ footer {
 
           ul {
             li {
-              font-family: $font_family;
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 150%;
-              color: #fff;
               margin-bottom: 12px;
 
-              &:last-child {
-                margin-bottom: 0;
+              a {
+                font-family: $font_family;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                &:hover:after {
+                  content: "";
+                  display: inline-block;
+                  width: 100%;
+                  height: 2px;
+                  background-color: #fff;
+                  position: absolute;
+                  bottom: -3px;
+                  left: 0;
+                }
               }
             }
           }
         }
-
       }
     }
 

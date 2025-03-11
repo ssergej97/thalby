@@ -1,9 +1,14 @@
 @import "variables";
+@import "mixins";
 
 .subscribe {
   padding-top: 79px;
   padding-bottom: 88px;
 
+  @include max-screen(360px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .container {
     text-align: center;
 
@@ -67,6 +72,12 @@
         border-radius: 100px;
         margin: auto;
         cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          color: $main_color;
+          background-color: white;
+        }
       }
     }
   }

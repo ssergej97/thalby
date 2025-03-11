@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .promo {
   background: #f0efeb;
@@ -9,6 +10,9 @@
     justify-content: space-between;
     align-items: center;
 
+    @include max-screen(360px) {
+      display: block;
+    }
     .text {
       h1 {
         font-family: $font_family;
@@ -36,6 +40,23 @@
         border: 1px solid #000;
         border-radius: 100px;
         text-decoration: none;
+        transition: 0.4s;
+
+        &:hover {
+          color: $main_color;
+          background-color: white;
+        }
+      }
+    }
+
+    img {
+      max-width: 599px;
+      position: relative;
+      left: 100px;
+
+      @include max-screen(360px) {
+        position: static;
+        width: 100%;
       }
     }
   }

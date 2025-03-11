@@ -6,10 +6,27 @@
     padding-top: 76px;
     padding-bottom: 51px;
 
+    @include max-screen(360px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
     .container {
       display: flex;
       align-items: center;
       gap: 50px;
+
+      @include max-screen(360px) {
+        display: block;
+      }
+
+      img {
+        max-width: 385px;
+
+        @include max-screen(360px) {
+          width: 100%;
+        }
+      }
 
       .card_text {
         h3 {
@@ -35,6 +52,12 @@
           text-decoration: underline;
           text-decoration-skip-ink: none;
           color: $main_color;
+          transition: 0.4s;
+          display: inline-block;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
@@ -45,10 +68,27 @@
     padding-top: 76px;
     padding-bottom: 51px;
 
+    @include max-screen(360px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    img {
+      max-width: 385px;
+
+      @include max-screen(360px) {
+        width: 100%;
+      }
+    }
+
     .container {
       display: flex;
       align-items: center;
       gap: 50px;
+
+      @include max-screen(360px) {
+        display: block;
+      }
 
       .card_text {
         h3 {
@@ -74,6 +114,16 @@
           text-decoration: underline;
           text-decoration-skip-ink: none;
           color: $main_color;
+          transition: 0.4s;
+          display: inline-block;
+
+          @include max-screen(360px) {
+            margin-bottom: 16px;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
@@ -84,10 +134,27 @@
     padding-top: 76px;
     padding-bottom: 51px;
 
+    @include max-screen(360px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    img {
+      max-width: 385px;
+
+      @include max-screen(360px) {
+        width: 100%;
+      }
+    }
+
     .container {
       display: flex;
       align-items: center;
       gap: 50px;
+
+      @include max-screen(360px) {
+        display: block;
+      }
 
       .card_text {
         h3 {
@@ -113,6 +180,12 @@
           text-decoration: underline;
           text-decoration-skip-ink: none;
           color: $main_color;
+          display: inline-block;
+          transition: 0.4s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
