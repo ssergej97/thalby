@@ -163,36 +163,37 @@ nav {
   @media screen and (max-width: 360px) {
     .best_seller {
       padding-bottom: 0; } }
-  .best_seller .container h2 {
+  .best_seller h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
     text-align: center;
     color: #000;
     padding-bottom: 52px; }
-  .best_seller .container .cards {
+  .best_seller .container {
     display: flex;
     justify-content: space-between; }
   @media screen and (max-width: 360px) {
-    .best_seller .container .cards {
+    .best_seller .container {
       display: block; } }
-    .best_seller .container .cards .card {
-      text-align: center; }
-      .best_seller .container .cards .card img {
+    .best_seller .container .card {
+      text-align: center;
+      max-width: 309px; }
+      .best_seller .container .card img {
         margin-bottom: 27px; }
-      .best_seller .container .cards .card h3 {
+      .best_seller .container .card h3 {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 17px;
         color: #000;
         margin-bottom: 17px; }
-      .best_seller .container .cards .card p {
+      .best_seller .container .card p {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 17px;
         color: #000;
         margin-bottom: 10px; }
-      .best_seller .container .cards .card a {
+      .best_seller .container .card a {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 17px;
@@ -202,9 +203,9 @@ nav {
         transition: 0.4s;
         display: inline-block; }
   @media screen and (max-width: 360px) {
-    .best_seller .container .cards .card a {
+    .best_seller .container .card a {
       margin-bottom: 40px; } }
-        .best_seller .container .cards .card a:hover {
+        .best_seller .container .card a:hover {
           transform: scale(1.1); }
 
 .best_seller_next .card_1 {
@@ -581,3 +582,38 @@ footer {
 .container {
   max-width: 1064px;
   margin: 0 auto; }
+
+.owl-nav .owl-prev span {
+  display: none; }
+
+.owl-nav .owl-prev {
+  width: 35px;
+  height: 35px;
+  background-color: #1a712a !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: -40px; }
+
+.owl-nav .owl-next {
+  width: 35px;
+  height: 35px;
+  background-color: #1a712a !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  right: -40px; }
+
+.owl-dots {
+  text-align: center; }
+
+.owl-dots .owl-dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  border-radius: 50%;
+  margin: 10px; }
+
+.owl-dots .owl-dot.active span {
+  background-color: #46A358; }

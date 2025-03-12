@@ -7,64 +7,64 @@
   @include max-screen(360px) {
     padding-bottom: 0;
   }
+  h2 {
+    font-family: $font_family;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: $main_color;
+    padding-bottom: 52px;
+  }
 
   .container {
-    h2 {
-      font-family: $font_family;
-      font-weight: 700;
-      font-size: 36px;
-      text-align: center;
-      color: $main_color;
-      padding-bottom: 52px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @include max-screen(360px) {
+      display: block;
     }
 
-    .cards {
-      display: flex;
-      justify-content: space-between;
+    .card {
+      text-align: center;
+      max-width: 309px;
 
-      @include max-screen(360px) {
-        display: block;
+      img {
+        margin-bottom: 27px;
       }
-      .card {
-        text-align: center;
 
-        img {
-          margin-bottom: 27px;
+      h3 {
+        font-family: $font_family;
+        font-weight: 700;
+        font-size: 17px;
+        color: $main_color;
+        margin-bottom: 17px;
+      }
+
+      p {
+        font-family: $font_family;
+        font-weight: 400;
+        font-size: 17px;
+        color: $main_color;
+        margin-bottom: 10px;
+      }
+
+      a {
+        font-family: $font_family;
+        font-weight: 700;
+        font-size: 17px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #000;
+        transition: 0.4s;
+        display: inline-block;
+
+        @include max-screen(360px) {
+          margin-bottom: 40px;
         }
 
-        h3 {
-          font-family: $font_family;
-          font-weight: 700;
-          font-size: 17px;
-          color: $main_color;
-          margin-bottom: 17px;
-        }
-
-        p {
-          font-family: $font_family;
-          font-weight: 400;
-          font-size: 17px;
-          color: $main_color;
-          margin-bottom: 10px;
-        }
-
-        a {
-          font-family: $font_family;
-          font-weight: 700;
-          font-size: 17px;
-          text-decoration: underline;
-          text-decoration-skip-ink: none;
-          color: #000;
-          transition: 0.4s;
-          display: inline-block;
-
-          @include max-screen(360px) {
-            margin-bottom: 40px;
-          }
-
-          &:hover {
-            transform: scale(1.1);
-          }
+        &:hover {
+          transform: scale(1.1);
         }
       }
     }

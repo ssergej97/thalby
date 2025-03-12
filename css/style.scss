@@ -21,6 +21,46 @@
   margin: 0 auto;
 }
 
+.owl-nav .owl-prev span {
+  display: none;
+}
+
+.owl-nav .owl-prev {
+  width: 35px;
+  height: 35px;
+  background-color: #1a712a!important;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: -40px;
+}
+
+.owl-nav .owl-next {
+  width: 35px;
+  height: 35px;
+  background-color: #1a712a!important;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  right: -40px;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dots .owl-dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: #46A358;
+}
 
 
 
