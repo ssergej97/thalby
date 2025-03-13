@@ -38,3 +38,12 @@
 .owl-nav .owl-prev span {
     display: inline-block;
 }
+
+@media screen and (max-width: 360px) {
+    .owl-nav .owl-next {
+        display: none;
+    }
+    .owl-nav .owl-prev {
+        display: none;
+    }
+}
