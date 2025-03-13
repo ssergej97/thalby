@@ -93,3 +93,17 @@ nav {
     }
   }
 }
+
+.navbar .navbar-brand {
+  position: absolute;
+  left: calc(50% - 40px);
+  top: 10px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-family: $font_family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 165%;
+  color: #1c1b1b;
+}

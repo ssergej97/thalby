@@ -5,6 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>thalby</title>
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
@@ -14,71 +16,57 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="nav_wrapper">
-                    <ul>
-                        <li>
-                            <a href="#">Shop</a>
-                        </li>
-                        <li>
-                            <a href="#">Collections</a>
-                        </li>
-                        <li>
-                            <a href="#">Try a Free Guide</a>
-                        </li>
-                        <li>
-                            <a href="#">Stories</a>
-                        </li>
-                    </ul>
-                    <div class="logo">
-                        <svg width="80" height="25" viewBox="0 0 80 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path d="M0 0H80V25H0V0Z" fill="url(#pattern0_1_8)"/>
-                            <defs>
-                                <pattern id="pattern0_1_8" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1_8" transform="scale(0.00625 0.02)"/>
-                                </pattern>
-                                <image id="image0_1_8" width="160" height="50" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
-                            </defs>
-                        </svg>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Collections</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Try a Free Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex align-items-center gap-1">
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.145 24.154C28.145 25.404 27.782 26.411 27.057 27.096C26.33 27.782 25.323 28.146 24.113 28.146H15.887C14.677 28.146 13.669 27.782 12.943 27.096C12.218 26.371 11.853 25.363 11.853 24.113V15.846C11.853 14.636 15.117 10.726 15.842 10C12.337 10.002 10 12.34 10 15.846V24.112C10 25.846 10.564 27.339 11.693 28.427C12.782 29.475 14.233 30 15.887 30H24.113C25.846 30 27.298 29.435 28.346 28.427C29.435 27.379 30 25.887 30 24.153V15.846C30 14.153 29.435 12.701 28.387 11.653C27.339 10.564 25.845 10 24.153 10H15.845L12.943 12.904C13.629 12.218 14.677 11.855 15.887 11.855H24.193C25.403 11.855 26.411 12.218 27.137 12.945C27.823 13.67 28.225 14.678 28.225 15.847V24.154H28.145ZM25.282 15.967C25.4383 15.9716 25.594 15.9447 25.7397 15.8881C25.8855 15.8314 26.0184 15.7461 26.1306 15.6371C26.2428 15.5282 26.332 15.3978 26.3929 15.2537C26.4538 15.1097 26.4852 14.9549 26.4852 14.7985C26.4852 14.6421 26.4538 14.4873 26.3929 14.3433C26.332 14.1992 26.2428 14.0688 26.1306 13.9599C26.0184 13.8509 25.8855 13.7656 25.7397 13.7089C25.594 13.6523 25.4383 13.6254 25.282 13.63C24.978 13.6389 24.6895 13.7659 24.4776 13.9841C24.2657 14.2022 24.1472 14.4944 24.1472 14.7985C24.1472 15.1026 24.2657 15.3948 24.4776 15.6129C24.6895 15.8311 24.978 15.9581 25.282 15.967V15.967ZM20 23.307C19.1241 23.3031 18.2853 22.9534 17.666 22.334C17.0466 21.7147 16.6969 20.8759 16.693 20C16.6969 19.1241 17.0466 18.2853 17.666 17.666C18.2853 17.0466 19.1241 16.6969 20 16.693C20.8759 16.6969 21.7147 17.0466 22.334 17.666C22.9534 18.2853 23.3031 19.1241 23.307 20C23.3028 20.8757 22.953 21.7143 22.3337 22.3334C21.7144 22.9525 20.8757 23.3021 20 23.306V23.307ZM20 14.839C17.178 14.839 14.839 17.137 14.839 20C14.8372 20.6783 14.9694 21.3502 15.2281 21.9772C15.4868 22.6042 15.8669 23.1739 16.3465 23.6535C16.8261 24.1331 17.3958 24.5132 18.0228 24.7719C18.6498 25.0306 19.3217 25.1628 20 25.161C22.863 25.161 25.16 22.822 25.16 20.001C25.16 17.177 22.822 14.839 20 14.839V14.839Z" fill="black" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="search">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24.873 24.884L29.965 29.976" stroke="black" stroke-width="2" stroke-miterlimit="20" />
+                                        <path d="M27.273 19.088C27.273 21.262 26.4094 23.3469 24.8722 24.8842C23.3349 26.4214 21.25 27.285 19.076 27.285C16.902 27.285 14.8171 26.4214 13.2799 24.8842C11.7426 23.3469 10.879 21.262 10.879 19.088C10.879 16.914 11.7426 14.8291 13.2799 13.2918C14.8171 11.7546 16.902 10.891 19.076 10.891C21.25 10.891 23.3349 11.7546 24.8722 13.2918C26.4094 14.8291 27.273 16.914 27.273 19.088Z" stroke="black" stroke-width="2" stroke-miterlimit="20" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="bag">
+                                    <svg width="36" height="42" viewBox="0 0 36 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5179 16.4C12.5179 14.9059 13.1115 13.473 14.168 12.4165C15.2244 11.36 16.6573 10.7665 18.1514 10.7665C19.6455 10.7665 21.0784 11.36 22.1349 12.4165C23.1914 13.473 23.7849 14.9059 23.7849 16.4" stroke="black" stroke-width="2" stroke-miterlimit="20" />
+                                        <path d="M25.534 31.976H10.769V17.211H25.534V31.976Z" stroke="black" stroke-width="2" stroke-miterlimit="20" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="socials">
-                    <ul>
-                        <li>
-                            <a href="#" title="instagram" target="_blank">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1_14)">
-                                        <path d="M18.2199 14.13C18.2199 15.38 17.857 16.387 17.132 17.072C16.405 17.758 15.398 18.122 14.188 18.122H5.96195C4.75195 18.122 3.74395 17.758 3.01795 17.072C2.29295 16.347 1.92795 15.339 1.92795 14.089V5.822C1.92795 4.612 5.19195 0.702 5.91695 -0.0240002C2.41195 -0.0220002 0.0749512 2.316 0.0749512 5.822V14.088C0.0749512 15.822 0.638951 17.315 1.76795 18.403C2.85695 19.451 4.30795 19.976 5.96195 19.976H14.188C15.921 19.976 17.3729 19.411 18.4209 18.403C19.51 17.355 20.075 15.863 20.075 14.129V5.822C20.075 4.129 19.51 2.677 18.462 1.629C17.4139 0.54 15.92 -0.0240002 14.228 -0.0240002H5.91995L3.01795 2.88C3.70395 2.194 4.75195 1.831 5.96195 1.831H14.268C15.478 1.831 16.486 2.194 17.212 2.921C17.898 3.646 18.2999 4.654 18.2999 5.823V14.13H18.2199ZM15.357 5.943C15.5133 5.94757 15.6689 5.92073 15.8147 5.86407C15.9605 5.8074 16.0934 5.72206 16.2056 5.61311C16.3178 5.50415 16.4069 5.37379 16.4679 5.22974C16.5288 5.0857 16.5601 4.93089 16.5601 4.7745C16.5601 4.61811 16.5288 4.4633 16.4679 4.31926C16.4069 4.17521 16.3178 4.04485 16.2056 3.93589C16.0934 3.82693 15.9605 3.7416 15.8147 3.68493C15.6689 3.62827 15.5133 3.60143 15.357 3.606C15.053 3.61489 14.7644 3.7419 14.5525 3.96007C14.3407 4.17823 14.2221 4.47038 14.2221 4.7745C14.2221 5.07862 14.3407 5.37077 14.5525 5.58893C14.7644 5.8071 15.053 5.93411 15.357 5.943ZM10.075 13.283C9.1991 13.2791 8.36024 12.9294 7.74091 12.31C7.12158 11.6907 6.7719 10.8519 6.76795 9.976C6.7719 9.10014 7.12158 8.26129 7.74091 7.64196C8.36024 7.02263 9.1991 6.67295 10.075 6.669C10.9508 6.67295 11.7897 7.02263 12.409 7.64196C13.0283 8.26129 13.378 9.10014 13.382 9.976C13.3777 10.8517 13.0279 11.6903 12.4086 12.3094C11.7893 12.9285 10.9506 13.2781 10.075 13.282V13.283ZM10.075 4.815C7.25295 4.815 4.91395 7.113 4.91395 9.976C4.9121 10.6543 5.04434 11.3262 5.30305 11.9532C5.56176 12.5802 5.94184 13.1499 6.42145 13.6295C6.90106 14.1091 7.47074 14.4892 8.09774 14.7479C8.72473 15.0066 9.39668 15.1388 10.075 15.137C12.938 15.137 15.235 12.798 15.235 9.977C15.235 7.153 12.897 4.815 10.075 4.815Z" fill="black" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1_14">
-                                            <rect width="21" height="20" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="search">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M24.873 24.884L29.965 29.976" stroke="black" stroke-width="2" stroke-miterlimit="20" />
-                                    <path d="M27.273 19.088C27.273 21.262 26.4094 23.3469 24.8722 24.8842C23.3349 26.4214 21.25 27.285 19.076 27.285C16.902 27.285 14.8171 26.4214 13.2799 24.8842C11.7426 23.3469 10.879 21.262 10.879 19.088C10.879 16.914 11.7426 14.8291 13.2799 13.2918C14.8171 11.7546 16.902 10.891 19.076 10.891C21.25 10.891 23.3349 11.7546 24.8722 13.2918C26.4094 14.8291 27.273 16.914 27.273 19.088Z" stroke="black" stroke-width="2" stroke-miterlimit="20" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="bag">
-                                <svg width="36" height="42" viewBox="0 0 36 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.5179 16.4C12.5179 14.9059 13.1115 13.473 14.168 12.4165C15.2244 11.36 16.6573 10.7665 18.1514 10.7665C19.6455 10.7665 21.0784 11.36 22.1349 12.4165C23.1914 13.473 23.7849 14.9059 23.7849 16.4" stroke="black" stroke-width="2" stroke-miterlimit="20" />
-                                    <path d="M25.534 31.976H10.769V17.211H25.534V31.976Z" stroke="black" stroke-width="2" stroke-miterlimit="20" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </nav>
-        </div>
         <div class="promo">
             <div class="container">
                 <div class="text">
@@ -327,9 +315,13 @@
             <p>Thalby LLC © 2021</p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 </html>

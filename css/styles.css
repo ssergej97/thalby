@@ -8,8 +8,9 @@
     background-color: #000000!important;
     border-radius: 50%;
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: -80px;
+    transition: 0.4s;
 }
 
 .owl-nav .owl-next {
@@ -18,11 +19,12 @@
     background-color: #000000!important;
     border-radius: 50%;
     position: absolute;
-    top: 150px;
+    top: 200px;
     right: -40px;
+    transition: 0.4s;
 }
 
-.owl-carousel .owl-dots {
+.owl-carousel .owl-dots .owl-dot {
     display: none;
 }
 .owl-carousel .owl-nav .owl-next {
